@@ -64,7 +64,7 @@ function checkWater(lat, lng) {
             let html;
 
             if (isWater) {
-                html = '<div align="center">🌊 Water! 🌊</div><br><div align="center" style="width:250px">In fact, this is the <em>${FEATURE}!</em></div>';
+                html = '<div align="center">🌊 Water! 🌊</div><div align="center" style="width:250px">In fact, this is the <em>${FEATURE}!</em></div>';
                 html = html.replace('${FEATURE}', featureName);
             } else {
                 html = '<div align="center">🌲 Land! 🌲';
