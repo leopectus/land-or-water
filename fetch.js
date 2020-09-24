@@ -24,7 +24,7 @@ function checkWater(lat, lng) {
     let url = "https://fleet.ls.hereapi.com/1/search/proximity.json" +
         "?layer_ids=" + layers +
         "&key_attributes=NAMES,NAMES,NAMES,NAMES,NAMES,NAMES,NAMES,NAMES" +
-        "&apiKey=gyInxArcQMrmC_C67xNngTrgYgCaQ3SxSkHLHNJjumw" +
+        "&apiKey=gu2xI9YN1IE6pyN2NXUWHy-cilUtvePc9tKShlNwCY0" +
         "&proximity=" + lat + "," + lng;
 
     let isWater;
