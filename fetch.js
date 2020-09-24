@@ -18,6 +18,7 @@ let features = [
 ];
 
 let markerGroup = new H.map.Group();
+let lastBubble;
 
 function checkWater(lat, lng) {
 
@@ -70,7 +71,12 @@ function checkWater(lat, lng) {
                 html = '<div align="center">🌲 Land! 🌲';
             }
 
+            if (lastBubble != null) {
+                lastBubble.close();
+            }
+
             let bubble = new H.ui.InfoBubble({ lat: lat, lng: lng }, { content: html });
+            lastBubble = bubble;
             ui.addBubble(bubble);
 
         }, error => {
