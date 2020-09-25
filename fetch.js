@@ -36,15 +36,11 @@ function checkWater(lat, lng) {
         .then(response => {
 
             let feature;
-
             if (response.geometries.length > 0) {
-
                 feature = response.geometries[0].attributes.FEATURE_TYPE;
 
                 if (features.includes(feature)) {
-
                     isWater = true;
-
                     let featureNames = response.geometries[0].attributes.NAMES;
                     featureName = featureNames.substring(5, featureNames.length);
                     let separator = '\u001E';
